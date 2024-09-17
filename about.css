@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4f5050;
+    color: #d9d3d3;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #dbe2e3;
+    font-weight: bold;
+}
+
+/* About Us Section */
+#about {
+    padding: 40px 20px;
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+    width: calc(33.333% - 20px); /* 3 items per row, adjust as needed */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        padding: 30px 10px;
+    }
+
+    .team-member {
+        width: calc(50% - 20px); /* 2 items per row on medium screens */
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%; /* 1 item per row on small screens */
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #about h2 {
+        font-size: 1.6rem;
+    }
+
+    #about p {
+        font-size: 0.8rem;
+    }
+}
