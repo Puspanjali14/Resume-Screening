@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4f5050;
+    background: linear-gradient(45deg, #312c84, #5972a3, #2a323a, #7b94a7);
     color: #d9d3d3;
 }
 
@@ -31,7 +31,7 @@ nav a {
 /* About Us Section */
 #about {
     padding: 40px 20px;
-    background-color: #333;
+    background: linear-gradient(45deg, #1f1f21, #171717, #2a323a, #f4f8fa);
     color: #f4f4f4;
     text-align: center;
 }
