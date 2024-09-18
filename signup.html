@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="signin-container">
+                <h2>Welcome Back!</h2>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="btn signin-btn">Sign In</button>
+            </div>
+            <div class="signup-container">
+                <h2>Create Account</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><img src="" alt="Facebook"></a>
+                    <a href="https://www.google.com"><img src="google-icon.png" alt="Google"></a>
+                    <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+                <p>or use your email for registration:</p>
+                <form id="signupForm">
+                    <input type="text" placeholder="Name" id="name" required>
+                    <input type="email" placeholder="Email" id="email" required>
+                    <input type="password" placeholder="Password" id="password" required>
+                    <button type="submit" class="btn signup-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
