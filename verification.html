@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.8em;
+        }
+
+        .verification-code {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .verification-code input {
+            width: 60px;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn {
+            padding: 12px;
+            background-color: #3b4ddc;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #6180f3;
+        }
+
+        .resend {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        .resend a {
+            color: #2c16f6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .verification-code input {
+                width: 55px;
+                padding: 12px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .verification-code input {
+                width: 45px;
+                padding: 10px;
+            }
+
+            .btn {
+                font-size: 0.85em;
+                padding: 10px;
+            }
+
+            .resend {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Verification</h2>
+        <form action="new-password.html" method="GET">
+            <div class="verification-code">
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+            </div>
+            <button type="submit" class="btn">Verify</button>
+        </form>
+        <p class="resend">If you didn't receive a code <a href="#">Resend</a></p>
+    </div>
+</body>
+</html>

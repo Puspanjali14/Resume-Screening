@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.8em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            text-align: left;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        .btn {
+            padding: 12px;
+            background-color: #5614f1;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color:  #5614f1;
+        }
+
+        .or {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .or p {
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 1em;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            color: #555;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color:  #5614f1;
+        }
+
+        a {
+            color: #5614f1;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            input[type="email"], .btn {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+
+            .social-icons a {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.4em;
+            }
+
+            input[type="email"], .btn {
+                font-size: 0.85em;
+                padding: 8px;
+            }
+
+            .social-icons a {
+                font-size: 24px;
+                margin: 0 8px;
+            }
+
+            .or p {
+                font-size: 0.9em;
+            }
+
+            a {
+                font-size: 0.8em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Forget Password</h2>
+        <form action="verification.html" method="GET">
+            <label for="email">Enter Email Address</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <div class="or">
+            <p>or</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-apple"></i></a>
+            </div>
+        </div>
+        <p><a href="signup.html">Sign up</a> if you don't have an account</p>
+    </div>
+</body>
+</html>
