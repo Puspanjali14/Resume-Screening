@@ -42,5 +42,51 @@
       </div>
     </div>
   </div>
+  <script>
+    document.querySelector('form').addEventListener('submit', async function(event) {
+      event.preventDefault(); // Prevent the form from submitting traditionally
+  
+      const emailOrPhone = document.getElementById('email-phone').value;
+      const password = document.getElementById('password').value;
+  
+      // Prepare the request data
+      const requestData = {
+        emailOrPhone: emailOrPhone,
+        password: password
+      };
+  
+      try {
+        // Sending data to the Django backend API
+        const response = await fetch('http://localhost:8000/login/', {  // Replace with your actual backend URL
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(requestData)
+        });
+  
+        const result = await response.json();
+  
+        if (response.ok) {
+          // Handle success (for example, store the JWT token and redirect)
+          console.log('Login Successful:', result);
+          // Store tokens in localStorage or cookie
+          localStorage.setItem('access_token', result.tokens.access);
+          localStorage.setItem('refresh_token', result.tokens.refresh);
+          // Redirect to another page after login
+          window.location.href = '/dashboard.html';  // Replace with your actual dashboard page
+        } else {
+          // Handle invalid credentials
+          alert('Login Failed: ' + result.message);
+        }
+  
+      } catch (error) {
+        console.error('Error during login:', error);
+        alert('An error occurred while trying to log in. Please try again later.');
+      }
+    });
+  </script>
+  
+  
 </body>
 </html>
