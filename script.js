@@ -15,6 +15,7 @@
 
 
     
+    
 document.addEventListener('scroll', function() {
   var footer = document.querySelector('footer');
   var scrollPosition = window.scrollY + window.innerHeight;
