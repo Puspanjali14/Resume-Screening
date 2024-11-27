@@ -83,17 +83,10 @@ hr {
   border-bottom: 1px solid #ceced2;
 }
 
-/* Circular Avatar & Animation */
 
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
 
 /* Steps Section */
 .steps {
@@ -122,14 +115,14 @@ hr {
 /* Reach Section */
 .reach-section {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #212224;
+  padding: 100px 20px;
+  background-color: #101f44;
 }
 
 .reach-section h2 {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #a198d0;
+  color: #150b47;
 }
 
 .stats {
@@ -137,6 +130,8 @@ hr {
   justify-content: space-evenly;
   flex-wrap: wrap;
   color: #c8c6d1;
+  padding: 10px 300px 30px 300px;
+
 }
 
 .stat-item h3 {

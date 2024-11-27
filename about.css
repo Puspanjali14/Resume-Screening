@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #312c84, #5972a3, #bdc1c5, #7b94a7);
+    background: linear-gradient(45deg, #c4c3d3, #5972a3, #bdc1c5, #7b94a7);
     color: #d9d3d3;
 }
     .about-us{
@@ -53,7 +53,7 @@ body {
 /* About Us Section */
 #about {
     padding: 40px 20px;
-    background: linear-gradient(45deg, #1f1f21, #171717, #2a323a, #f4f8fa);
+    background: linear-gradient(45deg, #717179, #171717, #2a323a, #f4f8fa);
     color: #f4f4f4;
     text-align: center;
 }
@@ -61,6 +61,7 @@ body {
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #0d47a1;
 }
 
 #about p {
@@ -113,7 +114,7 @@ body {
 }
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #060606;
+    background-color: #747070;
     color: #f2d9de;
 }
 
@@ -131,7 +132,7 @@ body {
 
 .about-us p {
     font-size: 1.2rem;
-    color: #979b99;
+    color: #4d5350;
     margin: 20px 0 40px;
 }
 
@@ -142,12 +143,16 @@ body {
 }
 
 .feature-box {
-    background-color: rgb(69, 69, 69);
+    background-color: rgb(17, 17, 17);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(204, 211, 199, 0.1);
     padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     width: 30%;
-    margin: 10px;
+    margin: 50px;
     text-align: center;
     transition: transform 0.3s ease;
 }
