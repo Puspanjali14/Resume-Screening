@@ -3,13 +3,9 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #312c84, #5972a3, #2a323a, #7b94a7);
+    background: linear-gradient(45deg, #312c84, #5972a3, #bdc1c5, #7b94a7);
     color: #d9d3d3;
 }
-
-
-        
-    
     .about-us{
         padding-top: 20%;
         padding-left: 10%;
@@ -17,17 +13,43 @@ body {
         padding-bottom: 10%;
       }
   
-   
-
-
-
-
-nav a {
-    text-decoration: none;
-    color: #dbe2e3;
-    font-weight: bold;
-}
-
+      header {
+        background-color: #e9ecec;
+        color: #e9e6e6;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(149, 144, 144, 0.2);
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 0 20px;
+        
+      }
+      
+      nav ul li {
+        margin: 0 20px;
+      }
+      
+      nav ul li a {
+        text-decoration: none;
+        color: #3b3636;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+      
+      nav ul li a:hover,
+      nav ul li a.active {
+        color: #464d46;
+      }
 /* About Us Section */
 #about {
     padding: 40px 20px;
@@ -75,23 +97,6 @@ nav a {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    #about {
-        padding: 30px 10px;
-    }
-
-    .team-member {
-        width: calc(50% - 20px); /* 2 items per row on medium screens */
-    }
-
-    #about h2 {
-        font-size: 2rem;
-    }
-
-    #about p {
-        font-size: 1rem;
-    }
-}
 
 @media (max-width: 480px) {
     .team-member {
@@ -106,78 +111,6 @@ nav a {
         font-size: 0.9rem;
     }
 }
-
-@media (max-width: 360px) {
-    .team-member img {
-        width: 100px;
-        height: 100px;
-    }
-
-    #about h2 {
-        font-size: 1.6rem;
-    }
-
-    #about p {
-        font-size: 0.8rem;
-    }
-}
-
-
-.footer {
-    background-color: #1b1919;
-    padding: 20px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display:none;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-left img.logo {
-    height: 40px;
-  }
-  
-  .footer-center p {
-    color: #555;
-  }
-  
-  .footer-right a {
-    margin-left: 15px;
-  }
-  
-  .footer-right img {
-    height: 20px;
-  }
-  .hidden {
-    top: -100px; /* Hides the header off-screen */
-  }
-  
-  @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-  
-    .footer-right {
-        margin-top: 10px;
-    }
-  }
-  
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #060606;
@@ -239,7 +172,7 @@ body {
     transform: translateY(-10px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
     .features-container {
         flex-direction: column;
         align-items: center;
@@ -251,11 +184,6 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .feature-box {
-        width: 45%;
-    }
-}
 
   
   

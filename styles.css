@@ -7,14 +7,50 @@
 
 /* General Body */
 body {
-  background: linear-gradient(45deg, #adb9ad,rgb(36, 36, 37)2, #d8e1d8);
-  color: #ffffff;
+  background: linear-gradient(45deg, #2d302d,rgb(90, 90, 91)2, #212321);
+  color: #ede9e9;
   padding: 20px;
 }
+header {
+  background-color: #e1ebeb;
+  color: #bfb7b7;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(149, 144, 144, 0.2);
+}
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+  
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3b3636;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #464d46;
+}
 /* Headings */
 h1, h2 {
-  color: #f5f5f5;
+  color: #5f18d8;
   margin-bottom: 15px;
 }
 .resume-strategist, .ai-resume-helper, .reach-section, .practice-section, .profile-section {
@@ -37,7 +73,7 @@ h1 {
 
 p {
   font-size: 1.2rem;
-  color: #d1d1d1;
+  color: #282727;
   margin-top: 15px;
 }
 
@@ -71,7 +107,7 @@ hr {
 }
 
 .step-number {
-  background-color: #6246ea;
+  background-color: #0f0f7c;
   color: white;
   font-size: 1.5rem;
   width: 40px;
@@ -93,24 +129,24 @@ hr {
 .reach-section h2 {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #6246ea;
+  color: #a198d0;
 }
 
 .stats {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  color: #6246ea;
+  color: #c8c6d1;
 }
 
 .stat-item h3 {
   font-size: 2.5em;
-  color: #bbb3b3;
+  color: #1b0505;
 }
 
 /* Testimonial Section */
 .testimonials {
-  background-color: #363235;
+  background-color: #111011;
   text-align: center;
 }
 
@@ -137,7 +173,7 @@ hr {
 
 /* Chat Section */
 .chat-box {
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(139, 133, 133);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -151,7 +187,7 @@ hr {
   display: flex;
   align-items: center;
   margin-top: 15px;
-  background-color: #f3f3f3;
+  background-color: #272424;
   border-radius: 8px;
   padding: 5px 10px;
 }
@@ -165,7 +201,7 @@ hr {
 }
 
 .ask-anything button {
-  background-color: #6246ea;
+  background-color: #bdbaca;
   color: white;
   border: none;
   border-radius: 50%;
@@ -271,9 +307,9 @@ hr {
 }
 
 .chat-box {
-  background-color: white;
+  background-color: rgb(128, 148, 195);
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(36, 35, 43, 0.1);
   padding: 20px;
   max-width: 350px;
   margin: 0 auto;
@@ -310,7 +346,7 @@ hr {
   display: flex;
   align-items: center;
   margin-top: 15px;
-  background-color: #f3f3f3;
+  background-color: #423f3f;
   border-radius: 8px;
   padding: 5px 10px;
 }
@@ -324,7 +360,7 @@ hr {
 }
 
 .ask-anything button {
-  background-color: #6246ea;
+  background-color: #4125c9;
   color: white;
   border: none;
   border-radius: 50%;
@@ -370,11 +406,11 @@ hr {
 }
 
 .practice-section {
-  background-color: #EAF5E6;
+  background-color: #81a1a4;
 }
 
 .profile-section {
-  background-color: #EAF1FA;
+  background-color: #656667;
 }
 
 .content {
@@ -382,7 +418,7 @@ hr {
 }
 
 .skills {
-  background-color: #FFE9C5;
+  background-color: #577599;
   padding: 20px;
   border-radius: 10px;
 }
@@ -398,7 +434,7 @@ hr {
 .languages li {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #c6bcbc;
   padding: 8px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -414,7 +450,7 @@ hr {
 }
 
 .skills-button button {
-  background-color: #FFC300;
+  background-color: #575882;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -468,7 +504,7 @@ hr {
 .reach-section {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  background-color: #b4cfcf;
 }
 
 .reach-section h2 {
@@ -505,13 +541,13 @@ hr {
 
 .testimonials {
   padding: 50px 20px;
-  background-color: #fff;
+  background-color: #a6a5a8;
   text-align: center;
 }
 
 .testimonials h2 {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .testimonials p {
@@ -526,7 +562,7 @@ hr {
 }
 
 .testimonial-item {
-  background-color: #f9f9f9;
+  background-color: #8a7c86;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -548,11 +584,11 @@ hr {
 
 .testimonial-item span {
   font-size: 1em;
-  color: #777;
+  color: #9a9595;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .stats, .testimonial-container {
       flex-direction: column;
   }
@@ -566,7 +602,7 @@ hr {
 }
 
 .interview-card, .interview-report {
-  background-color: #f9f9f9;
+  background-color: #afb1b6;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -602,7 +638,7 @@ hr {
 }
 
 .controls .skip {
-  background-color: #ddd;
+  background-color: #de1515;
   color: #333;
 }
 
@@ -621,14 +657,14 @@ hr {
 }
 
 .score {
-  background-color: #e0f7fa;
+  background-color: #2a6464;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .strengths {
-  background-color: #e0f4e0;
+  background-color: #3d5063;
   padding: 10px;
   border-radius: 5px;
 }
@@ -707,15 +743,7 @@ hr {
   color: #555;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-      grid-template-columns: 1fr;
-  }
 
-  .feature-cards {
-      grid-template-columns: 1fr;
-  }
-}
 
 .footer {
   background-color: #fff;
@@ -750,25 +778,7 @@ hr {
   height: 20px;
 }
 
-@media (max-width: 768px) {
-  .footer-container {
-      flex-direction: column;
-      text-align: center;
-  }
 
-  .footer-right {
-      margin-top: 10px;
-  }
-}
-
-
-/* Base styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .container {
   max-width: 1200px;
@@ -776,89 +786,81 @@ body {
   padding: 20px;
 }
 
+#contact {
+  background-color: #c1e6b6;
+  color: white;
+  padding: 50px 20px;
+}
+
 h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .info-box {
-  text-align: center;
-  flex: 1;
-  min-width: 250px;
-  margin-bottom: 20px;
+  width: 30%;
 }
 
 .info-box i {
-  font-size: 30px;
-  color: #007bff;
+  font-size: 2rem;
+  color: #00bfff;
 }
 
 .info-box h3 {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .info-box p {
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 1rem;
 }
 
 .form-section {
-  margin-top: 40px;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
+  background-color: #fff;
+  color: #666464;
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-label {
+.form-group label {
   display: block;
-  font-weight: bold;
   margin-bottom: 5px;
 }
 
-input, textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .submit-btn {
-  padding: 10px 20px;
-  background-color: #007bff;
+  display: inline-block;
+  background-color: #00bfff;
   color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: #0099cc;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-box {
-    margin-bottom: 30px;
-  }
-}
 
 @media (max-width: 480px) {
   h2 {
