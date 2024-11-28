@@ -2,9 +2,9 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10;
     background: linear-gradient(45deg, #c4c3d3, #5972a3, #bdc1c5, #7b94a7);
-    color: #d9d3d3;
+    color: #0f2826;
 }
     .about-us{
         padding-top: 20%;
@@ -106,6 +106,7 @@ body {
 
     #about h2 {
         font-size: 1.8rem;
+    
     }
 
     #about p {
