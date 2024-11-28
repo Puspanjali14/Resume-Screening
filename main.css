@@ -1,0 +1,174 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item span {
+    margin-right: 10px;
+  }
+  
+  .menu-item.active {
+    background-color: #d1c4e9;
+    color: #000;
+  }
+  
+  /* Content Styles */
+  .content {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .new-resume-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .main-section {
+    text-align: center;
+  }
+  
+  .main-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .no-resume img {
+    margin-bottom: 20px;
+  }
+  
+  .no-resume p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .build-resume-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .new-resume-btn {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .main-section h1 {
+      font-size: 20px;
+    }
+  
+    .no-resume p {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .menu-item {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .new-resume-btn, .build-resume-btn {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  
+    .profile-pic {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .main-section h1 {
+      font-size: 18px;
+    }
+  
+    .no-resume p {
+      font-size: 14px;
+    }
+  }
+  

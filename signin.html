@@ -12,7 +12,7 @@
     <div class="left-box">
       <div class="welcome-text">
         <h2>Welcome to...</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>your personalized job-matching assistant—where we connect your skills to the perfect opportunities!</p>
       </div>
     </div>
     <div class="right-box">
@@ -74,7 +74,7 @@
           localStorage.setItem('access_token', result.tokens.access);
           localStorage.setItem('refresh_token', result.tokens.refresh);
           // Redirect to another page after login
-          window.location.href = '/dashboard.html';  // Replace with your actual dashboard page
+          window.location.href = 'main.html';  
         } else {
           // Handle invalid credentials
           alert('Login Failed: ' + result.message);
