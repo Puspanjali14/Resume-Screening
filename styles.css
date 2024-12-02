@@ -48,11 +48,41 @@ nav ul li a:hover,
 nav ul li a.active {
   color: #464d46;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1b29;
+  color: #ffffff;
+}
+
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* General Body */
+body {
+  background: linear-gradient(45deg, #7c868f, #adb9ad, #9aabe2, #1d1f1d);
+  color: #ffffff;
+  padding: 20px;
+}
+
 /* Headings */
 h1, h2 {
-  color: #5f18d8;
+  color: #f5f5f5;
   margin-bottom: 15px;
 }
+
+/* Resume Strategist Section */
 .resume-strategist, .ai-resume-helper, .reach-section, .practice-section, .profile-section {
   display: flex;
   justify-content: space-between;
@@ -73,7 +103,7 @@ h1 {
 
 p {
   font-size: 1.2rem;
-  color: #282727;
+  color: #d1d1d1;
   margin-top: 15px;
 }
 
@@ -83,10 +113,39 @@ hr {
   border-bottom: 1px solid #ceced2;
 }
 
+/* Circular Avatar & Animation */
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
+.avatar img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #6246ea;
+}
 
+.avatar::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 3px solid #6246ea;
+  animation: rotate 5s infinite linear;
+}
 
-
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Steps Section */
 .steps {
@@ -100,8 +159,8 @@ hr {
 }
 
 .step-number {
-  background-color: #0f0f7c;
-  color: white;
+  background-color: #6246ea;
+  color: rgb(51, 51, 51);
   font-size: 1.5rem;
   width: 40px;
   height: 40px;
@@ -115,33 +174,31 @@ hr {
 /* Reach Section */
 .reach-section {
   text-align: center;
-  padding: 100px 20px;
-  background-color: #101f44;
+  padding: 50px 20px;
+  background-color: #141415;
 }
 
 .reach-section h2 {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #150b47;
+  color: #6246ea;
 }
 
 .stats {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  color: #c8c6d1;
-  padding: 10px 300px 30px 300px;
-
+  color: #6246ea;
 }
 
 .stat-item h3 {
   font-size: 2.5em;
-  color: #1b0505;
+  color: #bbb3b3;
 }
 
 /* Testimonial Section */
 .testimonials {
-  background-color: #111011;
+  background-color: #272526;
   text-align: center;
 }
 
@@ -168,7 +225,7 @@ hr {
 
 /* Chat Section */
 .chat-box {
-  background-color: rgb(139, 133, 133);
+  background-color: rgb(35, 34, 34);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -182,7 +239,7 @@ hr {
   display: flex;
   align-items: center;
   margin-top: 15px;
-  background-color: #272424;
+  background-color: #f3f3f3;
   border-radius: 8px;
   padding: 5px 10px;
 }
@@ -196,8 +253,8 @@ hr {
 }
 
 .ask-anything button {
-  background-color: #bdbaca;
-  color: white;
+  background-color: #6246ea;
+  color: rgb(5, 5, 5);
   border: none;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -266,6 +323,7 @@ hr {
     max-width: 100%;
   }
 }
+
 .ai-resume-helper {
   display: flex;
   justify-content: space-between;
@@ -293,7 +351,7 @@ hr {
 .text-section p {
   font-size: 1.2rem;
   margin-top: 15px;
-  color: #666;
+  color: #f0eded;
 }
 
 .chat-section {
@@ -302,9 +360,9 @@ hr {
 }
 
 .chat-box {
-  background-color: rgb(128, 148, 195);
+  background-color: rgb(148, 144, 144);
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(36, 35, 43, 0.1);
+  box-shadow: 0 4px 12px rgba(104, 102, 102, 0.1);
   padding: 20px;
   max-width: 350px;
   margin: 0 auto;
@@ -341,7 +399,7 @@ hr {
   display: flex;
   align-items: center;
   margin-top: 15px;
-  background-color: #423f3f;
+  background-color: #f3f3f3;
   border-radius: 8px;
   padding: 5px 10px;
 }
@@ -355,7 +413,7 @@ hr {
 }
 
 .ask-anything button {
-  background-color: #4125c9;
+  background-color: #6246ea;
   color: white;
   border: none;
   border-radius: 50%;
@@ -391,6 +449,9 @@ hr {
   }
 }
 
+.highlight {
+  color: green;
+}
 
 .practice-section, .profile-section {
   display: flex;
@@ -401,11 +462,11 @@ hr {
 }
 
 .practice-section {
-  background-color: #81a1a4;
+  background-color: #a1a9a1;
 }
 
 .profile-section {
-  background-color: #656667;
+  background-color: #191a1b;
 }
 
 .content {
@@ -413,7 +474,7 @@ hr {
 }
 
 .skills {
-  background-color: #577599;
+  background-color: #52504b;
   padding: 20px;
   border-radius: 10px;
 }
@@ -429,7 +490,7 @@ hr {
 .languages li {
   display: flex;
   align-items: center;
-  background-color: #c6bcbc;
+  background-color: #3d3c3c;
   padding: 8px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -445,7 +506,7 @@ hr {
 }
 
 .skills-button button {
-  background-color: #575882;
+  background-color: #FFC300;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -496,10 +557,12 @@ hr {
 }
 
 
+
 .reach-section {
   text-align: center;
   padding: 50px 20px;
-  background-color: #b4cfcf;
+  background-color: #8b8787;
+  border-radius: 10px;
 }
 
 .reach-section h2 {
@@ -536,13 +599,14 @@ hr {
 
 .testimonials {
   padding: 50px 20px;
-  background-color: #a6a5a8;
+  background-color: #6c6868;
   text-align: center;
+  border-radius: 10px;
 }
 
 .testimonials h2 {
   font-size: 2em;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .testimonials p {
@@ -557,7 +621,7 @@ hr {
 }
 
 .testimonial-item {
-  background-color: #8a7c86;
+  background-color: #292a2b;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -579,15 +643,26 @@ hr {
 
 .testimonial-item span {
   font-size: 1em;
-  color: #9a9595;
+  color: #777;
 }
 
 /* Responsive Design */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .stats, .testimonial-container {
       flex-direction: column;
   }
 }
+
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
 
 .interview-section {
   padding: 20px;
@@ -597,7 +672,7 @@ hr {
 }
 
 .interview-card, .interview-report {
-  background-color: #afb1b6;
+  background-color: #4e4c4c;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -633,7 +708,7 @@ hr {
 }
 
 .controls .skip {
-  background-color: #de1515;
+  background-color: #ddd;
   color: #333;
 }
 
@@ -652,14 +727,14 @@ hr {
 }
 
 .score {
-  background-color: #2a6464;
+  background-color: #e0f7fa;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .strengths {
-  background-color: #3d5063;
+  background-color: #e0f4e0;
   padding: 10px;
   border-radius: 5px;
 }
@@ -670,6 +745,15 @@ hr {
   }
 }
 
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 .hero-section {
   display: grid;
@@ -738,10 +822,22 @@ hr {
   color: #555;
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+      grid-template-columns: 1fr;
+  }
+
+  .feature-cards {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
 
 
 .footer {
-  background-color: #fff;
+  background-color: #8fad8a;
   padding: 20px;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -773,8 +869,16 @@ hr {
   height: 20px;
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
 
-
+  .footer-right {
+      margin-top: 10px;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -782,7 +886,7 @@ hr {
 }
 
 #contact {
-  background-color: #c1e6b6;
+  background-color: #4e514d;
   color: white;
   padding: 50px 20px;
 }
@@ -819,8 +923,8 @@ h2 {
 }
 
 .form-section {
-  background-color: #fff;
-  color: #666464;
+  background-color: #adadb0;
+  color: #464343;
   padding: 30px;
   border-radius: 10px;
 }
